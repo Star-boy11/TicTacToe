@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #0d0d0d;
+}
+
+body {
+  background-image: linear-gradient(to right top, #f5b2f5, #f1c8fe, #f1dcff, #f5eeff, #ffffff);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #f5b2f5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.navbar ul {
+
+  list-style-type: none;
+  display: flex;
+  font-weight: bold;
+
+}
+
+.navbar ul li {
+  margin: 0 25px;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar ul a:hover {
+  color: antiquewhite;
+  font-size: 16.99px
+}
+
+
+
+
+.game-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  position: relative
+}
+
+.box {
+  border: 2px solid black;
+  font-size: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: #f5b2f5;
+}
+
+.info {
+  font-size: 22px;
+}
+
+.game-info {
+  margin: 0 50px
+}
+
+.game-info h2 {
+  font-size: 2.5rem;
+}
+
+.img-class img {
+  width: 0;
+  transition: width 1s ease-in-out;
+  margin: 20px 0;
+}
+
+
+.bt-0 {
+  border-top: 0;
+}
+
+.bl-0 {
+  border-left: 0;
+}
+
+.br-0 {
+  border-right: 0;
+}
+
+.bb-0 {
+  border-bottom: 0;
+}
+
+#reset {
+  margin: 0 23px;
+  padding: 1px 18px;
+  background: #f3e7f9;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.line {
+  height: 3.5px;
+  width: 0;
+  position: absolute;
+  background-color: #a022a0;
+  transition: width 1s ease-in-out;
+}
+
+/* modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Style the modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Style the close button */
+.close {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+@media screen and (max-width: 950px) {
+  .game-container {
+    flex-wrap: wrap;
+  }
+
+  .game-info {
+    margin-top: 34px;
+  }
+
+  .game-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw);
+  }
+}

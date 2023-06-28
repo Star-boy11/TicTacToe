@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <h3>MyTicTacToe.com</h3>
+    <ul>
+      <li><a href="https://tic-tac-toe.starboy07.repl.co/">Home</a></li>
+      <li><a href="#" onclick="openModal()">About</a></li>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Thank You, for playing MyTicTacToe.</h2>
+          <p>The Tic Tac Toe game is a classic pen-and-paper game played on a 3x3 grid. The goal is to get three of your symbols (usually X or 0) in a row, either horizontally, vertically, or diagonally. In this project, I created a Tic Tac Toe game using HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+    </ul>
+  </div>
+
+  <div class="game-container">
+    <div class="container">
+      <div class="line"></div>
+      <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
+      <div class="box bt-0"><span class="boxtext"></span></div>
+      <div class="box bt-0 br-0"><span class="boxtext"></span></div>
+      <div class="box bl-0"><span class="boxtext"></span></div>
+      <div class="box"><span class="boxtext"></span></div>
+      <div class="box br-0"><span class="boxtext"></span></div>
+      <div class="box bl-0 bb-0"><span class="boxtext"></span></div>
+      <div class="box bb-0"><span class="boxtext"></span></div>
+      <div class="box bb-0 br-0"><span class="boxtext"></span></div>
+    </div>
+    <div class="game-info">
+      <h2>Welcome to MyTicTactoe</h2>
+      <div>
+        <span class="info">Turn for X</span>
+        <button id="reset">Reset</button>
+        </span>
+      </div>
+
+      <div class="img-class">
+        <img src="pokemon-jump.gif" alt="/">
+      </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
